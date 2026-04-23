@@ -6,7 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Configuração da conexão (Use a senha que você definiu no MySQL Installer)
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -22,7 +21,6 @@ db.connect(err => {
     console.log('Conectado ao banco AtlasConnect!');
 });
 
-// Rota para listar consultores (Usada pelo seu script.js)
 app.get('/api/consultores', (req, res) => {
     const sql = "SELECT * FROM Consultor WHERE status = 'Aprovado'";
     db.query(sql, (err, results) => {
@@ -33,8 +31,6 @@ app.get('/api/consultores', (req, res) => {
 
 app.post('/register', (req, res) => {
     const { email, password } = req.body;
-    
-    // Como a tabela Usuario exige nomeUsuario, usamos um valor padrão
     const sql = "INSERT INTO Usuario (nomeUsuario, email, senha) VALUES (?, ?, ?)";
     const nomePadrao = "Usuário Atlas";
 
