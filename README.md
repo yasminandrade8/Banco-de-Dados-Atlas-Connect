@@ -2,6 +2,13 @@
 
 Este repositório contém a estrutura, a modelagem e os scripts de banco de dados para o software **Atlas Connect**. O projeto foi desenvolvido utilizando **MySQL** para garantir o armazenamento, a integridade e a consulta eficiente das informações do sistema (como gerenciamento de Usuários, Consultores e Mentorias).
 
+## 👥 Integrantes do Grupo
+
+- 👨‍💻 **Helder Virissio**  
+- 👨‍💻 **Michael Douglas**  
+- 👩‍💻 **Yasmin Rodrigues** 
+- 👨‍💻 **Luiz Fernando**  
+
 ## 🚀 Tecnologias Utilizadas
 
 * **SGBD:** MySQL
