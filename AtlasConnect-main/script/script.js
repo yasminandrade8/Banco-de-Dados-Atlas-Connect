@@ -9,7 +9,7 @@ const dropLogin = document.getElementById('dropdown-login');
 
 // Abrir/Fechar Menu Mobile
 btnMobile.addEventListener('click', (e) => {
-    e.stopPropagation(); // Impede o fechamento imediato pelo clique fora
+    e.stopPropagation(); 
     nav.classList.toggle('active');
 });
 
@@ -27,9 +27,8 @@ function configurarDropdown(botao, caixa, outraCaixa) {
 configurarDropdown(btnPaises, dropPaises, dropLogin);
 configurarDropdown(btnLogin, dropLogin, dropPaises);
 
-// Fechar ao clicar fora (Melhorado)
+
 window.addEventListener('click', (e) => {
-    // Se o clique não foi no menu nem nos botões, fecha tudo
     if (!nav.contains(e.target) && !btnMobile.contains(e.target)) {
         nav.classList.remove('active');
         dropPaises.classList.remove('show');
