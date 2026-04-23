@@ -18,7 +18,5 @@ INSERT INTO DocumentoConsultor(idConsultor, tipoDocumento, urlArquivo) VALUES
     (2, 'Certificado', 'https://google.com/CertificadoCompleto2026.png'),
     (3, 'Linkedin', 'https://www.linkedin.com/in/yumm-tanaka-173312379/');
     
-ALTER TABLE Consultor 
-ADD COLUMN status ENUM('Pendente', 'Aprovado', 'Bloqueado') 
-DEFAULT 'Pendente';
+
 
