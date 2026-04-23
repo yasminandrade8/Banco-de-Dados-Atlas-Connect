@@ -31,28 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
     configurarDropdown(btnPaises, dropPaises, dropLogin);
     configurarDropdown(btnLogin, dropLogin, dropPaises);
 
-    // Substitua o listener de clique da window por este:
+   
     window.addEventListener('click', (e) => {
-    // 1. Menu Lateral Mobile
         if (nav && nav.classList.contains('active')) {
             if (!nav.contains(e.target) && !btnMobile.contains(e.target)) {
                 nav.classList.remove('active');
             }
         }
-
-        // 2. Dropdown de Países
         if (dropPaises && dropPaises.classList.contains('show')) {
             if (!dropPaises.contains(e.target) && !btnPaises.contains(e.target)) {
                 dropPaises.classList.remove('show');
             }
         }
-
-        // 3. Dropdown de LOGIN (O vilão)
         if (dropLogin && dropLogin.classList.contains('show')) {
             // Se o clique NÃO foi no botão que abre e NÃO foi dentro da caixa de login
             const clicouNoBotao = btnLogin.contains(e.target);
             const clicouDentroDaCaixa = dropLogin.contains(e.target);
-
             if (!clicouNoBotao && !clicouDentroDaCaixa) {
                 dropLogin.classList.remove('show');
             }
