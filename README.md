@@ -6,7 +6,7 @@ Este repositório contém a estrutura, a modelagem e os scripts de banco de dado
 
 - 👨‍💻 **Helder Virissio**  
 - 👨‍💻 **Michael Douglas**  https://github.com/midouglas
-- 👩‍💻 **Yasmin Rodrigues** 
+- 👩‍💻 **Yasmin Rodrigues** https://github.com/yasminandrade8
 - 👨‍💻 **Luiz Fernando**  
 
 ## 🚀 Tecnologias Utilizadas
