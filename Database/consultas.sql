@@ -33,3 +33,7 @@ SELECT * FROM vwConsultorsParaAprovar;
 -- Function --
 SELECT nomeConsultor, fnResumoPerformanceConsultor(idConsultor) AS Performance
 FROM Consultor;
+
+-- Procedures --
+CALL spAgendarMonitoria(1, 2, '2026-10-25 14:00:00', '01:00:00');
+CALL spRelatorioGeralSistema();
