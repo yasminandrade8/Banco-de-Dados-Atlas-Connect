@@ -4,7 +4,7 @@ Este repositório contém a estrutura, a modelagem e os scripts de banco de dado
 
 ## 👥 Integrantes do Grupo
 
-- 👨‍💻 **Helder Virissio**  
+- 👨‍💻 **Helder Virissio** https://github.com/Helder-Virissio 
 - 👨‍💻 **Michael Douglas**  https://github.com/midouglas
 - 👩‍💻 **Yasmin Rodrigues** https://github.com/yasminandrade8
 - 👨‍💻 **Luiz Fernando**  
